@@ -16,36 +16,45 @@
 
 import main
 
-temps = []
-  
-def add_temps():
-  for i in range():
-    n = input("Enter temperatures or done:")
-    if n == int():
-      temps.append(n) # adding the element
-    elif n == "done":
-      break
-    elif():
-      print("error, please type a valid entry")
-      
-print(temps)
 
+  
 # def add_temps():
-#   temperatures = []
-#   while True:
-#     temps = temperatures.append(input("Enter temperature or done:"))
-#     if temps == 'done':
-#       print(temperatures)
+#   for i in range(0,100):
+#     n = input("Enter temperatures or done:")
+#     if n == int:
+#       temps.append(n)
+#     elif n == "done":
 #       break
+#     elif():
+#       print("error, please type a valid entry")   
+#   print(temps)
+
+temperatures = []
+def add_temps():
+  try: 
+    while True:
+      temps = temperatures.append(int(input("Enter temperature or done:")))
+  except: #anything except number will exit loop
+    print(temperatures)
+
+
+def list_data():
+  high = 0
+  low = 0
+  for temp in temps:
+    if temp[0] > high:
+      high = temp[0]
+    elif temp[0] < low:
+      low = temp[0]
+  print(high)
+  print(low)
+  size = len(temperatures)
+  print(size)
+
+
   
 
-# def add_temps():
-#   try: 
-#     temperatures = []
-#     while True:
-#       temps = temperatures.append(int(input("Enter temperature or done:")))
-#   except: #anything except number will exit loop
-#     print(temperatures)
+
 
 
 
