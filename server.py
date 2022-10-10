@@ -16,7 +16,36 @@
 
 import main
 
+temperatures = []
 
+def add_temps():  
+  while True:
+    temps = list(map(int,input("\nEnter the tempatures and end with done : ").strip().split()))
+    if input == int:
+      temperatures.append(temps)
+    elif input == "done":
+      break
+    elif:
+      print("error, please enter a number or done")
+  print(temperatures)
+
+def list_data():
+  high = 0
+  low = 0
+  for temp in temperatures:
+    if temp[0] > high:
+      high = temp[0]
+    elif temp[0] < low:
+      low = temp[0]
+  print(high)
+  print(low)
+  size = len(temperatures)
+  print(size)
+  
+  
+add_temps()
+
+#pracitces that failed
   
 # def add_temps():
 #   for i in range(0,100):
@@ -29,33 +58,15 @@ import main
 #       print("error, please type a valid entry")   
 #   print(temps)
 
-temperatures = []
-def add_temps():
-  try: 
-    while True:
-      temps = temperatures.append(int(input("Enter temperature or done:")))
-  except: #anything except number will exit loop
-    print(temperatures)
-
-
-def list_data():
-  high = 0
-  low = 0
-  for temp in temps:
-    if temp[0] > high:
-      high = temp[0]
-    elif temp[0] < low:
-      low = temp[0]
-  print(high)
-  print(low)
-  size = len(temperatures)
-  print(size)
-
-
-  
-
-
-
+# temperatures = []
+# def add_temps():
+#   while True:
+#     try:  
+#         temps = temperatures.append(int(input("Enter temperature or done:")))
+#     except: #anything except number will exit loop
+#       print(temperatures)
+#       break
+      
 
 
 # creating an empty list
@@ -75,7 +86,6 @@ def list_data():
       
 # print(lst)
 
-add_temps()
 
 
 
