@@ -20,8 +20,8 @@ temperatures = []
 
 def add_temps():  
   while True:
-    temps = input("\nEnter the tempatures and end with done : ").strip().split()
-    if input == 'done':
+    temps = input("\nEnter the tempatures and end with done : ")
+    if input == '':
       break
     try:
       temperatures.append(int(temps))
