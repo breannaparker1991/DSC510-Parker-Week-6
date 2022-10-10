@@ -14,38 +14,35 @@
 # Print a message that tells the user how many temperatures are in the list.
 
 
-import main
-
-temperatures = []
+temp_list = []
 
 def add_temps():
   while True:
-      user_input = input("\nEnter the tempatures and end with done : ")
+      user_input = input("Enter the tempatures and end with done : ")
 
       if user_input == 'done':
           break
 
       try:
-          temperatures.append(int(user_input))
+          temp_list.append(int(user_input))
       except ValueError:
           print('Invalid entry.')
           continue
 
-
-  print(temperatures)
+  print(temp_list)
   
 
 def list_data():
   high = 0
   low = 0
-  for temp in temperatures:
+  for temp in temp_list:
     if temp[0] > high:
       high = temp[0]
     elif temp[0] < low:
       low = temp[0]
   print(high)
   print(low)
-  size = len(temperatures)
+  size = len(temp_list)
   print(size)
   
   

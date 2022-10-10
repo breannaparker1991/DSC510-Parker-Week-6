@@ -4,7 +4,7 @@ def asd():
   while True:
       user_input = input('Enter a number: ')
 
-      if user_input == '':
+      if user_input == 'done':
           break
 
       try:
