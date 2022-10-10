@@ -47,4 +47,5 @@ def list_data():
   
   
 add_temps()
+list_data()
 
