@@ -1,0 +1,76 @@
+#pracitces that failed
+ 
+# def add_temps():  
+#   while True:
+#     temps = input("\nEnter the tempatures and end with done : ").strip().split()
+#     if input == int:
+#       temperatures.append(temps)
+#     elif input == "done":
+#       break
+#     else:
+#       print("error, please enter a number or done")
+#   print(temperatures) 
+
+ 
+# def add_temps():
+#   for i in range(0,100):
+#     n = input("Enter temperatures or done:")
+#     if n == int:
+#       temps.append(n)
+#     elif n == "done":
+#       break
+#     elif():
+#       print("error, please type a valid entry")   
+#   print(temps)
+
+# temperatures = []
+# def add_temps():
+#   while True:
+#     try:  
+#         temps = temperatures.append(int(input("Enter temperature or done:")))
+#     except: #anything except number will exit loop
+#       print(temperatures)
+#       break
+      
+
+
+# creating an empty list
+# def add_temps():
+#   temperatures = []
+#   while True:
+#     if temperatures == done:
+#       break
+#     else:
+#       temperatures = list(map(int,input("\nEnter the tempatures and end with done : ").strip().split()))
+#       print(temperatures)
+    
+
+# for i in range(0, done):
+#     ele = int(input())
+#     temperatures.append(ele) # adding the element
+      
+# print(lst)
+
+
+
+
+
+
+
+
+# alternative that didn't match criteria
+
+
+
+
+
+# def add_temps():  
+#   while True:
+#     temps = input("\nEnter the tempatures and end with done : ").strip().split()
+#     if input == int:
+#       temperatures.append(temps)
+#     elif input == "done":
+#       break
+#     else:
+#       print("error, please enter a number or done")
+#   print(temperatures)
