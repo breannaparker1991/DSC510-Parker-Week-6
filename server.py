@@ -5,14 +5,8 @@
 #10/8/22
 
 
-# Your program must have a properly defined main method and a properly defined call to main.
-# Create an empty list called temperatures.
-# Allow the user to input a series of temperatures along with a sentinel value (do not use a number for a sentinel value) which will stop the user input.
-# Evaluate the temperature list to determine the largest and smallest temperature.
-# Print the largest temperature.
-# Print the smallest temperature.
-# Print a message that tells the user how many temperatures are in the list.
-
+import main
+print(main.main("hello"))
 
 temp_list = []
 
@@ -33,8 +27,8 @@ def add_temps():
   
 
 def list_data():
-  high = 0
-  low = 0
+  high = temp_list[0]
+  low = temp_list[0]
   for temp in temp_list:
     if temp > high:
       high = temp
