@@ -36,10 +36,10 @@ def list_data():
   high = 0
   low = 0
   for temp in temp_list:
-    if temp[0] > high:
-      high = temp[0]
-    elif temp[0] < low:
-      low = temp[0]
+    if temp > high:
+      high = temp
+    elif temp < low:
+      low = temp
   print(high)
   print(low)
   size = len(temp_list)
