@@ -18,18 +18,22 @@ import main
 
 temperatures = []
 
-def add_temps():  
+def add_temps():
   while True:
-    temps = input("\nEnter the tempatures and end with done : ")
-    
-    if temps == 'done':
-      break
-    try:
-      temperatures.append(int(temps))
-    except ValueError:
-      print("invalid entry")
-      continue
+      user_input = input("\nEnter the tempatures and end with done : ")
+
+      if user_input == 'done':
+          break
+
+      try:
+          temperatures.append(int(user_input))
+      except ValueError:
+          print('Invalid entry.')
+          continue
+
+
   print(temperatures)
+  
 
 def list_data():
   high = 0
